@@ -77,7 +77,7 @@ Then open your browser at `http://localhost:5000`
 
 ### 📖 License
 
-This project is released under the [MIT License](LICENSE).
+This project is currently private and not licensed for public use or distribution.
 
 ---
 
