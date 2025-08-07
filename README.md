@@ -1,73 +1,86 @@
+## 🎨 ComicCrafter AI
 
-# ComicCrafter AI
+**ComicCrafter AI** is a generative AI-powered comic story creator. It uses cutting-edge language and image generation tools to turn text prompts into structured comic stories — designed to run locally on edge devices.
 
-ComicCrafter AI is a generative AI-based comic generator that runs locally on edge devices. It creates comic-style stories based on user prompts, leveraging state-of-the-art language and image generation models.
+---
 
-## Features
+### 🚀 Features
 
-- Story generation using Large Language Models
-- AI-powered comic-style image generation
-- Four-part story structure: introduction, storyline, climax, and moral
-- Local deployment on edge devices
-- User-friendly web interface
+* ✍️ Story generation using Large Language Models (LLMs)
+* 🖼️ Comic-style image generation (Stable Diffusion-ready)
+* 🧠 Four-part structure: *Introduction → Storyline → Climax → Moral*
+* 💻 Local-first deployment (privacy-friendly)
+* 🌐 Simple and interactive web interface (HTML templates)
 
-## Prerequisites
+---
 
-- Python 3.8+
-- CUDA-compatible GPU (recommended)
-- 8GB+ RAM
-- Intel-based edge device for deployment
+### ⚙️ Requirements
 
-## Installation
+* Python 3.8+
+* 8GB+ RAM
+* CUDA-compatible GPU (for image generation)
+* Intel-based edge device (for deployment)
 
-1. Clone the repository:
+---
+
+### 📦 Installation
+
+1. **Clone the repo**
+
+   ```bash
+   git clone https://github.com/yourusername/ComicAI-Studio.git
+   cd ComicAI-Studio
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+### 📂 Project Structure
+
+```
+ComicAI-Studio/
+├── app.py              # Main app entrypoint
+├── server.py           # Flask server (API handler)
+├── minimal_server.py   # Lightweight server (optional)
+├── requirements.txt    # Python dependencies
+├── templates/          # HTML templates for UI
+├── vercel.json         # Vercel deployment config
+└── README.md           # Project documentation
+```
+
+---
+
+### ▶️ Usage
+
+**To run locally:**
+
 ```bash
-git clone https://github.com/yourusername/comiccrafter-ai.git
-cd comiccrafter-ai
+python server.py
 ```
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+Then open your browser at `http://localhost:5000`
 
-3. Download the required model weights (instructions in setup guide)
+---
 
-## Project Structure
+### ☁️ Deployment (Vercel)
 
-```
-comiccrafter-ai/
-├── app.py                 # Main Streamlit application
-├── requirements.txt       # Project dependencies
-├── modules/
-│   ├── story_generator/  # LLM-based story generation
-│   ├── image_generator/  # Image generation using Stable Diffusion
-│   └── comic_composer/   # Comic composition and layout
-├── models/               # Model weights and configurations
-└── utils/               # Utility functions
-```
+1. Push to GitHub with `vercel.json` in root.
+2. Connect to [Vercel](https://vercel.com/) and import the GitHub repo.
+3. Set up Python build and deploy.
 
-## Usage
+---
 
-1. Start the application:
-```bash
-streamlit run app.py
-```
+### 📖 License
 
-2. Open your web browser and navigate to `http://localhost:8501`
-3. Enter your story prompt and click "Generate Comic"
+This project is released under the [MIT License](LICENSE).
 
-## Technical Details
+---
 
-- Story Generation: Uses open-weight LLMs (Llama/Mistral) for coherent story generation
-- Image Generation: Implements Stable Diffusion for comic-style image creation
-- Web Interface: Built with Streamlit for easy interaction
-- Edge Deployment: Optimized for Intel-based edge devices
+### 🤝 Contributing
 
-## License
-
-This project is open-source and available under the MIT License.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
+Pull requests are welcome! Please fork the repo and open a PR.
